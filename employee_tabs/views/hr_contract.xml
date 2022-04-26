@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_contract_form_inherited" model="ir.ui.view">
+        <field name="name">hr.contract.inherited</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="model">hr.contract</field>
+        <field name="priority">100</field>
+        <field type="xml" name="arch">
+            <xpath expr="//page[@name='information']" position="after">
+                <page string="Income">
+                    <group>
+                        <group>
+                            <field name="workforce_agility_consulting"/>
+                            <field name="workforce_agility_task_based"/>
+                            <field name="expense_reimbursement"/>
+                        </group>
+                        <group>
+                            <field name="npo_optimization_drive_Test"/>
+                            <field name="ni_outdoor"/>
+                            <field name="IP_services_towards"/>
+                        </group>
+                        <group>
+                            <field name="total_income"/>
+                        </group>
+                    </group>
+                </page>
+                <page string="Salaries">
+                    <group>
+                        <group>
+                            <field name="payroll_taxes"/>
+                            <field name="Thirteenth_salary"/>
+                        </group>
+                        <group>
+                            <field name="Termination_Expense"/>
+                            <field name="Fringe_Bennefits_Vacations"/>
+                        </group>
+                         <group>
+                            <field name="total_salaries"/>
+                        </group>
+                    </group>
+                </page>
+                <page string="Logistics">
+                    <group>
+                        <group>
+                            <field name="Air_transport_related"/>
+                            <field name="Urban_Transport"/>
+                            <field name="Car_rental"/>
+                            <field name="Gasoline"/>
+                            <field name="Tolls"/>
+                            <field name="Car_Maint_Repair"/>
+                            <field name="Office_rent"/>
+                        </group>
+                        <group>
+                            <field name="Consultant_Housing_Hotel"/>
+                            <field name="Fixed_VOIP_Cell_Phone"/>
+                            <field name="Internet_Service"/>
+                            <field name="Mail_Courier"/>
+                            <field name="Meals"/>
+                            <field name="Prof_Development_Training"/>
+                            <field name="Safety_Hygiene"/>
+                        </group>
+                        <group>
+                            <field name="total_logistics"/>
+                        </group>
+                    </group>
+                </page>
+                <page string="Materiales/Equipos/ HI">
+                    <group>
+                        <group>
+                            <field name="computers"/>
+                            <field name="specialized_equipment"/>
+                        </group>
+                        <group>
+                            <field name="specialized_materials"/>
+                            <field name="consultant_health_insurance"/>
+                        </group>
+                        <group>
+                            <field name="total_materials"/>
+                        </group>
+                    </group>
+                </page>
+                <page string="Others">
+                    <group>
+                        <group>
+                            <field name="visa_processing_fees"/>
+                            <field name="independent_sub"/>
+                        </group>
+                        <group>
+                            <field name="withholding_tax"/>
+                            <field name="bank_fees"/>
+                        </group>
+                        <group>
+                            <field name="total_others"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>
